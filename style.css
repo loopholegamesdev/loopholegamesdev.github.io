@@ -1,0 +1,38 @@
+:root {
+  --bg: #05060f;
+  --panel: #0d1124;
+  --ink: #e8f1ff;
+  --soft: #9aa9cc;
+  --cyan: #40d8ff;
+  --violet: #9d5cff;
+  --gold: #ffcf4d;
+  --edge: #1f2747;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; line-height: 1.6; }
+body { background: radial-gradient(ellipse at 50% -10%, #142a55 0%, var(--bg) 60%) fixed; }
+a { color: var(--cyan); }
+.wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+header.top { display: flex; align-items: center; justify-content: space-between; padding: 18px 0; }
+header.top .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 700; letter-spacing: .02em; }
+header.top .brand img { width: 36px; height: 36px; border-radius: 9px; }
+header.top nav a { color: var(--soft); text-decoration: none; margin-left: 18px; font-size: .95rem; }
+header.top nav a:hover { color: var(--ink); }
+.hero { text-align: center; padding: 48px 0 24px; }
+.hero h1 { font-size: clamp(2.6rem, 9vw, 5rem); margin: 0; letter-spacing: .04em; background: linear-gradient(180deg, #ffffff 0%, var(--cyan) 100%); -webkit-background-clip: text; background-clip: text; color: transparent; text-shadow: 0 0 40px rgba(64, 216, 255, .25); }
+.hero .tag { font-size: clamp(1.1rem, 3.5vw, 1.5rem); color: var(--soft); margin: 8px 0 26px; }
+.badge { display: inline-block; padding: 12px 22px; border-radius: 14px; background: linear-gradient(180deg, #2a7fd6, #1b5fae); color: #fff; font-weight: 700; text-decoration: none; box-shadow: 0 8px 24px rgba(30, 110, 220, .35); }
+.badge.soon { background: var(--panel); border: 1px solid var(--edge); color: var(--soft); box-shadow: none; }
+.shots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; padding: 30px 0; }
+.shots img { width: 100%; border-radius: 16px; border: 1px solid var(--edge); box-shadow: 0 10px 30px rgba(0, 0, 0, .5); }
+@media (max-width: 720px) { .shots { grid-template-columns: repeat(2, 1fr); } header.top nav a { margin-left: 12px; } }
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; padding: 10px 0 40px; }
+.card { background: var(--panel); border: 1px solid var(--edge); border-radius: 16px; padding: 18px; }
+.card h3 { margin: 0 0 6px; color: var(--gold); font-size: 1.05rem; }
+.card p { margin: 0; color: var(--soft); font-size: .95rem; }
+footer { border-top: 1px solid var(--edge); padding: 22px 0 40px; color: var(--soft); font-size: .9rem; text-align: center; }
+footer a { margin: 0 8px; }
+.doc { background: var(--panel); border: 1px solid var(--edge); border-radius: 18px; padding: 26px 28px; margin: 20px 0 40px; }
+.doc h1 { margin-top: 0; }
+.doc h2 { color: var(--cyan); font-size: 1.15rem; margin-top: 28px; }
+.doc p, .doc li { color: #cdd7ee; }
