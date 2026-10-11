@@ -1,4 +1,1 @@
-# app-ads.txt for Loophole Games
-# Replace pub-0000000000000000 with your AdMob publisher ID (AdMob > Settings > Account information),
-# then delete this comment line's "#" on the line below. AdMob shows the exact line under Apps > app-ads.txt.
-# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-3457259559072258, DIRECT, f08c47fec0942fa0
