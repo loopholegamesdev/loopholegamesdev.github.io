@@ -36,3 +36,11 @@ footer a { margin: 0 8px; }
 .doc h1 { margin-top: 0; }
 .doc h2 { color: var(--cyan); font-size: 1.15rem; margin-top: 28px; }
 .doc p, .doc li { color: #cdd7ee; }
+
+.cta { display: inline-block; margin-top: 18px; padding: 12px 22px; border-radius: 10px; background: linear-gradient(180deg, #ffd96a, #f0b429); color: #241500; font-weight: 700; text-decoration: none; box-shadow: 0 4px 0 rgba(0,0,0,.35); }
+.cta:hover { filter: brightness(1.08); }
+.beta { margin: 10px 0 40px; padding: 22px 22px 14px; border-radius: 14px; background: rgba(64, 216, 255, .06); border: 1px solid rgba(64, 216, 255, .35); }
+.beta h2 { margin: 0 0 8px; color: var(--cyan); }
+.beta p { color: var(--soft); margin: 0 0 10px; }
+.beta ol { margin: 0 0 8px; padding-left: 22px; line-height: 1.7; }
+.beta a { color: var(--cyan); }
